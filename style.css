@@ -1,30 +1,29 @@
 *::before,
 *::after,
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-body{
-    width: 100vh;
-    padding: 1.25rem;
+body {
+  width: 100vh;
+  padding: 1.25rem;
 }
 
-section{
-    display: flex;
-    padding: 1.25rem;
+section {
+  display: flex;
+  padding: 1.25rem;
 }
 
-
-.summary{
-    flex-direction: column;
-    padding: 1rem;
+.summary {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
 }
-
 
 .attribution {
   font-size: 11px;
