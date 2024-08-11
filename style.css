@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
 *::before,
 *::after,
 * {
@@ -9,14 +14,124 @@
   margin: 0;
 }
 
+
+ 
+
+:root{
+
+  /* Primary */
+
+  --Light-red: hsl(0, 100%, 67%);
+  --Orangey-yellow: hsl(39, 100%, 56%);
+  --Green-teal: hsl(166, 100%, 37%);
+  --Cobalt-blue: hsl(234, 85%, 45%);
+
+
+/* Gradients */
+
+/* (background) */
+  --Light-slate-blue: hsl(252, 100%, 67%);
+  --Light-royal-blue: hsl(241, 81%, 54%);
+/* circle */
+  --Violet-blue: hsla(256, 72%, 46%, 1);
+  --Persian-blue: hsla(241, 72%, 46%, 0);
+
+
+/* Neutral */
+  --White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+
+/*
+### Note
+
+Use transparency to get the color variations necessary to match the design. Hint: look into using `hsla()`.
+  Weights: 500, 700, 800
+*/
 body {
   width: 100vh;
   padding: 1.25rem;
+  font-family: "Hanken Grotesk";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  
 }
 
 section {
   display: flex;
+  flex: 1;
   padding: 1.25rem;
+  max-width: 100%;
+  height: auto;
+  width: 500px;
+  height: 400px;
+  box-shadow: 3px 3px var(--Dark-gray-blue);
+}
+
+.status{
+/*   background: linear-gradient(hsla(var(--Cobalt-blue),1));
+ */
+    background: linear-gradient(var(--Light-slate-blue), var(--Light-royal-blue));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    border-radius: 1.25rem;
+    width: 250px;
+    height: auto;
+    text-align: center;
+
+}
+
+.status .top{
+  color: var(--Light-lavender);
+  font-size: 1.1rem;
+  font-weight: 700;
+} 
+
+.result-circle h1{
+  font-size: 3rem;
+  color: var(--White);
+  background: linear-gradient(hsla(var(--Dark-gray-blue), 1), hsla(var(--Dark-gray-blue),0.5));
+}
+/* background: linear-gradient(50deg, HSLA(205, 45%, 44%, 1), #7b2736); */
+
+.result-circle{
+  background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  width: 9rem;
+  height: 10rem;
+  margin: 20px auto;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.result-circle h4{
+  color: var(--Light-slate-blue);
+  height: 800;
+}
+
+.status .bottom{
+  font-size: 1.5rem;
+  color: var(--White);
+  margin-bottom: 0.5rem;
+}
+
+.status p{
+  color: var(--Light-lavender);
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
 
 .summary {
