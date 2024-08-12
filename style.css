@@ -67,12 +67,12 @@ body {
 section {
   display: flex;
   flex: 1;
-  padding: 1.25rem;
-  max-width: 100%;
+/*   padding: 1.25rem;
+ */  max-width: 100%;
   height: auto;
   width: 500px;
   height: 400px;
-  box-shadow: 3px 3px var(--Dark-gray-blue);
+  margin-bottom: 1rem;
 }
 
 .status{
@@ -130,7 +130,7 @@ section {
 .status p{
   color: var(--Light-lavender);
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 1rem;
 }
 
@@ -138,6 +138,85 @@ section {
   padding: 1rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+  width: 250px;
+  box-shadow: 12px 12px 2px 1px hsla(241, 81%, 54%, .03);  
+  border-radius: 1.25rem;
+}
+
+.summary .reaction ,
+.memory ,.verbal ,.visual {
+  margin: 1rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  
+}
+
+.summary .reaction{
+  background-color: hsla(0, 100%, 67%, 0.1);
+  padding: 0.8rem 0.35rem;
+}
+
+.summary .result-word-1{
+  color: var(--Light-red);
+}
+
+.summary .memory{
+  background-color: hsla(39, 100%, 56%, 0.1);
+  padding: 0.8rem 0.35rem;
+}
+
+.summary .result-word-2{
+  color: var(--Orangey-yellow);
+}
+
+.summary .verbal{
+  background-color: hsla(166, 100%, 37%, 0.1);
+  padding: 0.8rem 0.35rem;
+}
+
+.summary .result-word-3{
+  color: var(--Green-teal);
+}
+
+.summary .visual{
+  background-color: hsla(241, 100%, 89%, 0.2);
+  padding: 0.8rem 0.35rem;
+}
+
+.summary .result-word-4{
+  color: var(--Light-royal-blue);
+}
+
+.summary .span-result {
+  
+  margin-left: 1.5rem;
+  
+}
+
+.summary #span-61{
+  margin-left: 2.25rem;
+}
+
+.summary #span-72{
+  margin-left: 2.25rem;
+}
+
+.summary a{
+  background-color: var(--Dark-gray-blue);
+  border-radius: 2rem;
+  padding: 0.75rem 1rem;
+  color: var(--White);
+  text-align: center;
+  text-decoration: none;
+  height: 700;
+  font-family: "Hanken Grotesk";
+}
+
+.summary a:hover{
+  background-color: var(--Light-slate-blue);
+  color: var(--Dark-gray-blue);
+  font-weight: 900;
   
 }
 
@@ -148,9 +227,21 @@ section {
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 14px;
   text-align: center;
+  background-color: var(--Light-lavender);
+  color: var(--Orangey-yellow);
+  border-radius: 0.5rem;
+  padding: 0.1rem;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--Dark-gray-blue);
+  text-decoration: none;
 }
+
+.attribution a:hover{
+  background-color: var(--Dark-gray-blue);
+  color: var(--Light-lavender);
+  border-radius: 0.5rem;
+}
+
